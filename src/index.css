@@ -1,13 +1,42 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f7f7f9!important
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.form-control::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+.form-control::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #fff;
+}
+
+.default-color{
+    background-color: #fff !important;
+    color: black !important;
+}
+
+.MuiOutlinedInput-inputAdornedStart{
+  padding-left: 1em;
+}
+
+button, input, .MuiSelect-outlined.MuiSelect-outlined{
+  font-size: 0.7em !important;
+  padding-right: 32px;
+  height: 1em;
+  line-height: 1;
+}
+input:-internal-autofill-selected{
+  background: none !important;
 }
